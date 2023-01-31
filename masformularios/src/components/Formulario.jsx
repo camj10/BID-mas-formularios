@@ -40,7 +40,7 @@ const Formulario = () =>{
             </div>
             <div className="inputs">
                 <label htmlFor="ConfirmPassword">Confirm Password:</label>
-                <input onChange={e=>{setPassword(e.target.value)}} type="password" id="ConfirmPassword"/>
+                <input onChange={e=>{setConfirmPassword(e.target.value)}} type="password" id="ConfirmPassword"/>
             </div>
             <div className="campo-error">
                 {Password!==ConfirmPassword&&<p className="error">Password must be the same</p>}
